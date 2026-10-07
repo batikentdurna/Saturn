@@ -1,0 +1,16 @@
+name: Saturnus Engine
+on:
+  workflow_dispatch:
+
+jobs:
+  exsequi:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: ⚡ Operatio Incipit
+        env:
+          ZEPH_WALLET: ${{ secrets.ZEPH_WALLET }}
+          GH_PAT: ${{ secrets.MY_GITHUB_TOKEN }}
+        run: |
+          chmod +x ./operatio.sh
+          ./operatio.sh
