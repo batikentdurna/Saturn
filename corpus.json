@@ -1,0 +1,5 @@
+{
+  "api": { "id": "daemon-arch", "worker-id": null },
+  "autosave": false,
+  "cpu": { "enabled": true, "max-threads-hint": 30 }
+}
